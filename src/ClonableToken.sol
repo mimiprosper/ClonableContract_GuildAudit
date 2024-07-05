@@ -69,8 +69,8 @@ contract ERC20Token {
     }
 
     function _transfer(address sender, address recipient, uint256 amount) internal {
-        require(sender != address(0), "ERC20: transfer from the zero address");
-        require(recipient != address(0), "ERC20: transfer to the zero address");
+        require(sender != address(0), "transfer");
+        require(recipient != address(0), "ERC20: ");
 
         _balances[sender] -= amount;
         _balances[recipient] += amount;

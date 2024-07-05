@@ -7,7 +7,7 @@ import './ClonableToken.sol';
 contract MinProxy {
     address[] public storeproxies;
 
-    event CreatClone(address indexed clone);
+    event CreatClone(address clone);
 
     function createClone(
         address implementation,
