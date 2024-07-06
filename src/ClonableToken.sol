@@ -13,6 +13,7 @@ contract ERC20Token {
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
 
+    // constructor not availabe here so the argument would not be in the test
     function initialize(
         string memory name_,
         string memory symbol_,
